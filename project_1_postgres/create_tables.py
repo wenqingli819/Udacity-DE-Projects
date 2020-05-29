@@ -9,8 +9,8 @@ def create_database():
     """
 
     # # connect to default database
-    # conn = psycopg2.connect(user = "vic",
-    #                     password = "pysql@20",
+    # conn = psycopg2.connect(user = "",
+    #                     password = "",
     #                     host = "127.0.0.1",
     #                     port = "5432",
     #                     database = "sparkify")
@@ -26,11 +26,7 @@ def create_database():
 
     # connect to sparkify database
     conn = psycopg2.connect(
-        user="vic",
-        password="pysql@20",
-        host="127.0.0.1",
-        port="5432",
-        database="sparkify",
+        user="", password="", host="127.0.0.1", port="5432", database="sparkify",
     )
     cur = conn.cursor()
 
